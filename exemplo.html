@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .result {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="inputValue">
+  <button onclick="displayResult()">Adicionar Valor</button>
+  <div id="display"></div>
+
+  <script>
+    function displayResult() {
+      var inputValue = document.getElementById("inputValue").value;
+      var resultElement = document.createElement("p");
+      resultElement.textContent = inputValue;
+      document.getElementById("display").appendChild(resultElement);
+    }
+  </script>
+</body>
+</html>
